@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/layout1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/login"
+            android:textColor="@color/White"
+            android:text="Login"
+            android:background="@drawable/button_selection"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/signup"
+            android:textColor="@color/White"
+            android:text="Sign Up"
+            android:background="@drawable/button_selection_b"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gp"
+            android:layout_marginTop="12dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/fb"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tw"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameone"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@id/layout1"
+        android:layout_toRightOf="@+id/layout1"/>
+</RelativeLayout>
