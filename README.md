@@ -2,4 +2,4 @@
 Design The Login &amp; Registration Activity in Android Studio
 
 
-![Login Registration](https://user-images.githubusercontent.com/50763393/93016903-1f9cb880-f5e2-11ea-8d41-44ca73d2579a.png)
+![Login Registration](https://user-images.githubusercontent.com/50763393/93017202-786d5080-f5e4-11ea-9410-11080a92094d.png)
